@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>معادلات</title>
+		<meta charset=UTF-8>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='stylesheet' href='../../../Styles/Mobile.css' media='(max-width: 767px)'>
+		<link rel='stylesheet' href='../../../Styles/Tablet.css' media='(min-width: 768px) and (max-width: 1023px)'>
+		<link rel='stylesheet' href='../../../Styles/Desktop.css' media='(min-width: 1024px)'>
+		<link type='image/x-icon' rel='icon' href='../../../Icon/Favicon.ico'>
+	</head>
+	<body>
+		<div id=score></div>
+
+		<div id=chooseDisplay>
+			<b>اختر طريقة العرض</b><br><br>
+			<form>
+				<select name=display>
+					<option value=V selected>رأسى</option>
+					<option value=H>أفقى</option>
+				</select><br><br>
+				<input type=submit disabled value=Ok>
+			</form>
+		</div>
+
+		<div id=chooseOP>
+			<b>اختر العملية(ات)</b><br>
+			<form>
+				<input type=checkbox name=OPs[] value=+>+<br>
+				<input type=checkbox name=OPs[] value=->-&nbsp;<br>
+				<input type=checkbox name=OPs[] value=×>×<br><br>
+				<input type=submit disabled value=Ok>
+			</form>
+		</div>
+
+		<div id=setMultiplication>
+			<form>
+				<b>ابدأ الضرب من</b><br>
+				<select name=multiplyBegin>
+					<option value=1 selected>1</option>
+					<option value=2>2</option>
+					<option value=3>3</option>
+					<option value=4>4</option>
+					<option value=5>5</option>
+					<option value=6>6</option>
+					<option value=7>7</option>
+					<option value=8>8</option>
+					<option value=9>9</option>
+				</select><br>
+				<b>أنهيه عند</b><br>
+				<select name=multiplyEnd>
+					<option value=1>1</option>
+					<option value=2>2</option>
+					<option value=3>3</option>
+					<option value=4>4</option>
+					<option value=5>5</option>
+					<option value=6>6</option>
+					<option value=7>7</option>
+					<option value=8>8</option>
+					<option value=9 selected>9</option>
+				</select><br><br>
+				<input type=submit disabled value=Ok>
+			</form>
+		</div>
+
+		<div id=questionForm>
+			<p id=question></p>
+			<form>
+				<input type=text name=answer size=5 autocomplete=off id =answer><br><br>
+				<input type=submit disabled value=Ok>
+			</form>
+		</div><br>
+
+		<div id=buttons>
+			<button id=reset>إعادة</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id=pasteLog>السجل</button>
+		</div>
+
+		<script src=Script.js></script>
+	</body>
+</html>
